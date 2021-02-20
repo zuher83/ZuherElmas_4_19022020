@@ -42,17 +42,20 @@
   max-width: 700px;
   margin: auto auto auto auto; }
 
-#bloc-3-services .icon-lg {
+#bloc-3-services .three-col .icon-lg {
   color: #364577 !important;
   border-color: #364577 !important; }
-  #bloc-3-services .icon-lg::before {
+  #bloc-3-services .three-col .icon-lg::before {
     font-size: 4rem; }
-#bloc-3-services h3 {
+#bloc-3-services .three-col h3 {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: bold; }
-#bloc-3-services p {
+#bloc-3-services .three-col p {
   font-size: 1.125rem;
   line-height: 1.33333333; }
+#bloc-3-services .blockquote p {
+  font-size: 1.5rem;
+  font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */

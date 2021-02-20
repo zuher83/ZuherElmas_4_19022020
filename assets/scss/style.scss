@@ -61,21 +61,32 @@
 }
 
 #bloc-3-services {
-  .icon-lg {
-    color: #364577 !important;
-    border-color: #364577 !important;
+  .three-col {
+    .icon-lg {
+      color: #364577 !important;
+      border-color: #364577 !important;
 
-    &::before {
-      font-size: 4rem;
+      &::before {
+        font-size: 4rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.33333333;
     }
   }
-  h3 {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  .blockquote {
+    p {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
   }
-  p {
-    font-size: 1.125rem;
-    line-height: 1.33333333;
-  }
+
 }
