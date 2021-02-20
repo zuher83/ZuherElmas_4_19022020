@@ -1,4 +1,58 @@
 .navbar-light .navbar-nav a.nav-link {
   font-size: 1.5rem; }
 
+#bloc-1-hero {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/la-chouette-agence-banniere.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  #bloc-1-hero::before {
+    background: url(../img/texture-paper.png);
+    background-size: 280px 280px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  #bloc-1-hero .row {
+    background-color: #303030; }
+  #bloc-1-hero .wrap {
+    text-align: center;
+    color: #fff;
+    z-index: 999; }
+    #bloc-1-hero .wrap img {
+      padding: 50px 0; }
+    #bloc-1-hero .wrap h1 {
+      font-size: 2.125rem; }
+    #bloc-1-hero .wrap .btn {
+      margin-top: 25px;
+      margin-bottom: 35px;
+      text-transform: uppercase; }
+
+.tight-width-whitespace {
+  max-width: 700px;
+  margin: auto auto auto auto; }
+
+#bloc-3-services .icon-lg {
+  color: #364577 !important;
+  border-color: #364577 !important; }
+  #bloc-3-services .icon-lg::before {
+    font-size: 4rem; }
+#bloc-3-services h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+#bloc-3-services p {
+  font-size: 1.125rem;
+  line-height: 1.33333333; }
+
 /*# sourceMappingURL=style.css.map */
