@@ -3,23 +3,17 @@
   font-size: 1.5rem;
 }
 
-// Parallax Header presentation
-#bloc-1-hero {
+// parallax common class
+.parallax-section {
   padding-top: 140px;
   padding-bottom: 140px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../img/la-chouette-agence-banniere.jpg");
   background-attachment: fixed;
   background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
 
   &::before {
-    background: url(../img/texture-paper.png);
     background-size: 280px 280px;
     content: "";
     position: absolute;
@@ -29,12 +23,11 @@
     right: 0;
   }
 
-  .row {
+  .bgc-dark {
     background-color: #303030;
   }
 
   .wrap {
-    //height: 400px;
     text-align: center;
     color: #fff;
     z-index: 999;
@@ -51,6 +44,22 @@
       margin-top: 25px;
       margin-bottom: 35px;
       text-transform: uppercase;
+    }
+  }
+
+}
+
+// Parallax Header presentation
+#bloc-1-hero {
+  background-image: url("../img/la-chouette-agence-banniere.jpg");
+
+  .wrap {
+    img {
+      padding: 50px 0;
+    }
+
+    h1 {
+      font-size: 2.125rem;
     }
   }
 }
@@ -82,6 +91,7 @@
       line-height: 1.33333333;
     }
   }
+
   .blockquote {
     p {
       font-size: 1.5rem;
@@ -92,51 +102,10 @@
 
 // Parallax Header presentation
 #bloc-2-hero {
-  padding-top: 140px;
-  padding-bottom: 140px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
   background-image: url("../img/image-de-presentation.bmp");
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
 
-  &::before {
-    background: url(../img/texture-paper.png);
-    background-size: 280px 280px;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+}
 
-  .row {
-    background-color: #303030;
-  }
-
-  .wrap {
-    text-align: center;
-    color: #fff;
-    z-index: 999;
-
-    img {
-      padding: 50px 0;
-    }
-
-    h2 {
-      font-size: 2.0rem;
-    }
-
-    .btn {
-      margin-top: 25px;
-      margin-bottom: 35px;
-      text-transform: uppercase;
-    }
-  }
+#bloc-5-cta {
+  background-image: url("../img/la-chouette-agence-banniere.jpg");
 }
