@@ -6,7 +6,7 @@
     <title>Accueil | La Chouette Agence</title>
     <meta name="title" content="Accueil | La Chouette Agence">
     <meta name="description"
-          content="L'Entreprise webdesign Lyon - Faites confiance à l'expertise de La Chouette Agence pour vos projet en web design">
+          content="L'Entreprise webdesign Lyon - Faites confiance à l'expertise de La Chouette Agence pour vos projets en web design">
 
     <!--    Og Graph-->
     <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Accueil | La Chouette Agence">
     <meta property="og:description"
           content="L'Entreprise webdesign Lyon - Faites confiance à l'expertise de La Chouette Agence pour vos projet en web design"/>
-    <meta property="og:image" content="https://zuher83.github.io/ZuherElmas_4_19022020/img/logo.png">
+    <meta property="og:image" content="https://zuher83.github.io/ZuherElmas_4_19022020/assets/img/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -23,27 +23,31 @@
     <meta property="twitter:title" content="Accueil | La Chouette Agence">
     <meta property="twitter:description"
           content="L'Entreprise webdesign Lyon - Faites confiance à l'expertise de La Chouette Agence pour vos projet en web design">
-    <meta property="twitter:image" content="https://zuher83.github.io/ZuherElmas_4_19022020/img/logo.png">
+    <meta property="twitter:image" content="https://zuher83.github.io/ZuherElmas_4_19022020/assets/img/logo.png">
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     <link rel="canonical" href="https://zuher83.github.io/ZuherElmas_4_19022020/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!--    External libraries-->
     <link href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
-            defer></script>
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer
+    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"
             defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" defer></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
+    <!--    Local files-->
+    <script src="assets/js/style.js" defer></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
@@ -60,12 +64,12 @@
         <div class="container">
             <a class="navbar-brand logo" href="/">
 					<span role="img" aria-label="Logo La Chouette Agence" title="La Chouette Agence">
-					<img src="img/la-chouette-agence.png"
+					<img src="assets/img/la-chouette-agence.png"
                          alt="Entreprise web design Lyon logo la meilleure agence web design" class="img img-fluid"/>
 				</span>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse"
-                    data-target="#top_menu_collapse">
+                    data-target="#top_menu_collapse" aria-label="Toogle navigation button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="top_menu_collapse" class="collapse navbar-collapse">
@@ -87,12 +91,12 @@
         <div class="container bloc-lg">
             <div class="row tight-width-whitespace bgc-dark">
                 <div class="col-sm-12 wrap">
-                    <img src="img/logo.png" class="center-block image-resize-mode"
+                    <img src="assets/img/logo.png" class="center-block image-resize-mode"
                          alt="La chouette agence lyon, entreprise webdesign lyon"/>
                     <h1>La Chouette Agence<br><br>
                         Votre Entreprise Webdesign de Lyon vous apporte son expertise</h1>
                     <a href="page2.html" class="btn btn-lg btn-clean btn-danger shadow-sm p-3"
-                       id="cta-hero">Contact</a>
+                       id="cta-hero" alt="Contactez nous">Contact</a>
                 </div>
             </div>
         </div>
@@ -119,7 +123,7 @@
             <div class="row text-center mt-5 mb-5 three-col">
                 <div class="col-sm-4">
                     <div>
-                        <span class="et-icon-browser shadow-sm icon-lg"></span>
+                        <span class="icon-browser shadow-sm icon-lg"></span>
                     </div>
                     <h3 class="mb-2 mt-3">
                         Web design
@@ -131,7 +135,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <span class="et-icon-presentation shadow-sm icon-lg"></span>
+                        <span class="icon-presentation shadow-sm icon-lg"></span>
                     </div>
                     <h3 class="mb-2 mt-3">
                         &nbsp;Stratégie
@@ -143,7 +147,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <span class="et-icon-edit shadow-sm icon-lg"></span>
+                        <span class="icon-edit shadow-sm icon-lg"></span>
                     </div>
                     <h3 class="mb-2 mt-3">
                         Illustrations
@@ -185,7 +189,7 @@
                         trouvable sur les moteurs de recherche.
                     </p>
                     <a href="page2.html" class="btn btn-lg btn-clean btn-danger shadow-sm p-3"
-                       id="cta-hero2">Contactez
+                       id="cta-hero2" alt="contactez notre équipe">Contactez
                         notre équipe</a>
                 </div>
             </div>
@@ -199,18 +203,18 @@
             <div class="row mt-5 mb-5 tight-width-whitespace">
                 <div class="col-sm-12 text-center">
                     <blockquote class="blockquote text-center">
-                        <h2>"Nous travaillons avec beaucoup de clients, voici nos réalisations"</h2>
+                        <p>"Notre entreprise de webdesign est au service de nombreux clients sur Lyon, voici nos réalisations"</p>
                     </blockquote>
                 </div>
             </div>
-            <div class="row tight-width-whitespace">
+            <div class="row tight-width-whitespace photos">
                 <div class="col-sm-6 mb-5">
-                    <a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1"
-                       data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-                        <img
-                                src="img/1.jpg"
-                                alt="paris web design logo agence web meilleure agence et refonte site web journal"
-                                class="img-fluid"/></a>
+                    <a class="ligthbox_image" href="assets/img/1.jpg" data-toggle="lightbox" data-gallery="gallery-1" data-max-width="600"
+                       data-footer="Refonte d'un site web pour un journal local">
+                        <img src="assets/img/1.jpg"
+                             alt="paris web design logo agence web meilleure agence et refonte site web journal"
+                             class="img-fluid"/>
+                    </a>
                     <h2 class="mg-md text-center">
                         Refonte d'un site web pour un journal local
                     </h2>
@@ -219,11 +223,12 @@
                     </p>
                 </div>
                 <div class="col-sm-6 mb-5">
-                    <a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1"
-                       data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img
-                            src="img/2.jpg"
-                            class="img-fluid"
-                            alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"/></a>
+                    <a class="ligthbox_image" href="assets/img/2.jpg" data-toggle="lightbox" data-gallery="gallery-1"
+                       data-footer="Création d'un site web pour photographes">
+                        <img
+                                src="assets/img/2.jpg" class="img-fluid"
+                                alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"/>
+                    </a>
                     <h2 class="mg-md text-center">
                         Création d'un site web pour photographes
                     </h2>
@@ -232,11 +237,10 @@
                     </p>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1"
-                       data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
-                        <img
-                                src="img/3.bmp" class="img-fluid"
-                                alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+                    <a class="ligthbox_image" href="assets/img/3.jpg" data-toggle="lightbox" data-gallery="gallery-1"
+                       data-footer="Création d'un site internet pour un voyageur">
+                        <img src="assets/img/3.jpg" class="img-fluid"
+                             alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
                     <h2 class="mg-md text-center">
                         Création d'un site internet pour un voyageur
                     </h2>
@@ -247,11 +251,10 @@
                     </p>
                 </div>
                 <div class="col-sm-6">
-                    <a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1"
-                       data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
-                        <img
-                                src="img/4.bmp" class="img-fluid"
-                                alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"/></a>
+                    <a class="ligthbox_image" href="assets/img/4.jpg" data-toggle="lightbox" data-gallery="gallery-1"
+                       data-footer="Conception d'un site pour une agence de mariage">
+                        <img src="assets/img/4.jpg" class="img-fluid"
+                             alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"/></a>
                     <h2 class="mg-md text-center">
                         Conception d'un site pour une agence de mariage
                     </h2>
@@ -289,32 +292,22 @@
                     <blockquote class="blockquote text-center">
                         <p>"La chouette agence - Entreprise webdesign basée à Lyon."</p><br>
                     </blockquote>
-                    <div class="row row-no-gutters social">
-                        <div class="col-sm-3">
+                    <div class="row social mb-5">
+                        <div class="col-sm-12">
                             <div class="text-center">
-                                <a class="social" href="index.html"><i class="fab fa-twitter icon-md"></i></a>
+                                <a class="social btn text-primary" href="twitter.com" aria-label="partager sur twitter"><i
+                                        class="fab fa-twitter icon-md"></i></a>
+                                <a class="social btn text-primary" href="facebook.com"
+                                   aria-label="partager sur facebook"><span class="fab fa-facebook icon-md"></span></a>
+                                <a class="social btn text-primary" href="dribble.com" aria-label="partager sur dribble"><span
+                                        class="fab fa-dribbble icon-md"></span></a>
+                                <a class="social btn text-primary" href="instagram.com"
+                                   aria-label="partager sur instagram"><span
+                                        class="fab fa-instagram icon-md"></span></a>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-facebook icon-md"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-dribbble icon-md"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-instagram icon-md"></span></a>
-                            </div>
-                        </div>
-                        <div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design,
-                            illustrations, design de site web, site web, web, internet, site internet, site
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row ext-links">
                         <div class="col-sm-4">
                             Partenaires
                             <ul>
