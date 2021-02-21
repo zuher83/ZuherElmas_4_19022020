@@ -1,6 +1,7 @@
+.navbar-brand .logo img {}
 // Override navbar link font size
 .navbar-light .navbar-nav a.nav-link {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 // parallax common class
@@ -101,6 +102,10 @@
 
 #bloc-5-cta {
   background-image: url("../img/la-chouette-agence-banniere.jpg");
+}
+
+.texture-paper::before {
+  background: url(../img/texture-paper.png);
 }
 
 .blockquote {
