@@ -5,6 +5,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
 
 AddType 'text/html; charset=UTF-8' html
+AddHandler application/x-httpd-ea-php74 .html .htm
 
 <IfModule mod_expires.c>
 
