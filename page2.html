@@ -47,12 +47,10 @@
         defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" defer></script>
 
-
     <!--    Local files-->
     <script src="assets/js/style.js" defer></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <?php include("includes/form_1.php"); ?>
     <!-- Analytics -->
 
     <!-- Analytics END -->
@@ -60,8 +58,6 @@
 </head>
 
 <body>
-    <!-- Principal conteneur -->
-
     <!-- Navbar Header -->
     <header class=" o_affix_enabled" id="bloc-0">
         <nav class="navbar navbar-expand-md navbar-light">
@@ -91,100 +87,94 @@
         </nav>
 
         <!-- bloc-1-presentation -->
-        <section id="bloc-maps-hero">
+        <div id="bloc-maps-hero">
             <div class="row ">
-                <div class="col-sm-12 wrap">
-                    <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen
+                <div class="col-sm-12 wrap maps">
+                    <iframe height="450" style="border:0" loading="lazy" allowfullscreen
                         src="https://www.google.com/maps/embed/v1/search?q=2%20Place%20Sathonay%2C%2069001%20Lyon%2C%20France&key=AIzaSyBmlsGo3UXGdlB9VaiocBAGU31IcE_vgBY"></iframe>
                 </div>
             </div>
-        </section>
+        </div>
     </header>
 
-    <!-- bloc-6 -->
-    <section class="d-bloc mt-5 mb-5" id="bloc-6">
-        <div class="container">
-            <div class="row">
-                <article class="col-sm-12">
-                    <h1 class="text-center hero-bloc-text tc-white">
-                        Parlons web design !
-                    </h1>
-                    <p class="text-center">
-                        Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-                        Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-                    </p>
-                </article>
-            </div>
-        </div>
-    </section>
+    <main>
+        <!-- bloc-6 -->
+        <article class="d-bloc mt-5 mb-5">
+            <header>
+                <h1 class="text-center hero-bloc-text tc-white">
+                    Parlons web design !
+                </h1>
+            </header>
+            <p class="text-center">
+                Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+                Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+            </p>
+        </article>
 
-    <!-- bloc-7 -->
-    <section class="bloc bgc-white l-bloc" id="bloc-7">
-        <div class="container bloc-lg">
-            <div class="row">
-                <div class="col-sm-7">
-                    <form id="form_1" class="needs-validation" role="form" method="POST" action="includes/form_1.php"
-                        success-msg="Your message has been sent."
-                        fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-                        <div class="form-group">
-                            <label for="name">
-                                Nom
-                            </label>
-                            <input id="name" class="form-control" placeholder="Votre nom" required />
-                            <?php echo "<p class='text-danger'>$errName</p>"; ?>
-                            <div class="invalid-tooltip">
-                                Veuillez indiquer votre nom
+        <!-- bloc-7 -->
+        <section class="bloc bgc-white l-bloc" id="bloc-7">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <form id="form_1" class="needs-validation" method="POST" action="includes/form_1.php">
+                            <div class="form-group">
+                                <label for="name">
+                                    Nom
+                                </label>
+                                <input id="name" class="form-control" placeholder="Votre nom" required />
+                                <div class="invalid-tooltip">
+                                    Veuillez indiquer votre nom
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                Adresse email
-                            </label>
-                            <input id="email" class="form-control" placeholder="Votre email" type="email" required />
-                            <?php echo "<p class='text-danger'>$errName</p>";?>
-                            <div class="invalid-tooltip">
-                                Veuillez indiquer votre email
+                            <div class="form-group">
+                                <label for="email">
+                                    Adresse email
+                                </label>
+                                <input id="email" class="form-control" placeholder="Votre email" type="email"
+                                    required />
+                                <div class="invalid-tooltip">
+                                    Veuillez indiquer votre email
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="input_504">
-                                Comment nous avez-vous connu ?
-                            </label>
-                            <input class="form-control" type="text" required id="input_504" />
-                        </div>
+                            <div class="form-group">
+                                <label for="input_504">
+                                    Comment nous avez-vous connu ?
+                                </label>
+                                <input class="form-control" type="text" required id="input_504" />
+                            </div>
 
-                        <div class="form-group">
-                            <label for="message">
-                                Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-                            </label>
-                            <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-                            <div class="invalid-tooltip">
-                                Veuillez indiquer votre brief
+                            <div class="form-group">
+                                <label for="message">
+                                    Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+                                </label>
+                                <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                                <div class="invalid-tooltip">
+                                    Veuillez indiquer votre brief
+                                </div>
                             </div>
+                            <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="jumbotron">
+                            <h2>Notre adresse</h2>
+                            <address>
+                                contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
+                                lundi au vendredi<br>
+                            </address>
                         </div>
-                        <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
-                    </form>
-                </div>
-                <div class="col-sm-5">
-                    <div class="jumbotron">
-                        <h2>Notre adresse</h2>
-                        <address>
-                            contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
-                            lundi au vendredi<br>
-                        </address>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ScrollToTop Button -->
-    <a href="#" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out btn btn-d" id="toTopBtn">
-        <span class="fa fa-chevron-up"></span>
-    </a>
-    <!-- ScrollToTop Button END-->
-    </div>
-    <!-- Principal conteneur END -->
+        <!-- ScrollToTop Button -->
+        <a href="#"
+            class="scroll-top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out btn btn-d btn-danger"
+            id="toTopBtn">
+            <span class="fa fa-chevron-up"></span>
+        </a>
+    </main>
 
     <!-- Footer - bloc-8 -->
     <footer class="mt-5" id="bloc-8">
@@ -251,4 +241,6 @@
             </div>
         </div>
     </footer>
-</b
+</body>
+
+</html>
