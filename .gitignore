@@ -33,10 +33,12 @@
 # .idea/artifacts
 # .idea/compiler.xml
 # .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-# *.iml
+.idea/*.iml
+.idea/modules
+*.iml
 # *.ipr
+.idea/*.xml
+.idea/**/*.xml
 
 # CMake
 cmake-build-*/
