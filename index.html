@@ -30,10 +30,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--    External libraries-->
-    <script src="assets/js/lazysizes.min.js"></script>
-
-
 </head>
 
 <body>
@@ -84,7 +80,7 @@
 
     <main>
         <!-- bloc-2-services -->
-        <section id="bloc-2-services" class="bloc-2-services container mb-1 p-4 lazyload">
+        <section id="bloc-2-services" class="bloc-2-services container mb-1 p-4">
             <h2 class="text-danger pt-4 pm-1 mb-0">Nos services</h2>
             <section class="row text-center mb-5 three-col pb-5 mt-1 bloc-3-services">
                 <header class="row mb-5">
@@ -139,7 +135,7 @@
             </section>
         </section>
 
-        <article class="row mb-5 lazyload">
+        <article class="row mb-5">
             <div class="container">
                 <div class="col-xs-12 text-center">
                     <header>
@@ -158,7 +154,7 @@
 
 
         <!-- bloc-3-what-i-do -->
-        <section id="bloc-2-hero" class="parallax-section bloc-2-hero texture-paper lazyload">
+        <section id="bloc-2-hero" class="parallax-section bloc-2-hero texture-paper">
             <div class="container bloc-lg">
                 <div class="row tight-width-whitespace bgc-dark">
                     <div class="col-sm-12 wrap">
@@ -184,7 +180,7 @@
         </section>
 
         <!-- bloc-4-portfolio -->
-        <section id="bloc-4-portfolio" class="mb-5 bloc-4-portfolio lazyload">
+        <section id="bloc-4-portfolio" class="mb-5 bloc-4-portfolio">
             <div class="container">
                 <div class="row mt-5 mb-5 tight-width-whitespace">
                     <div class="col-sm-12 text-center">
@@ -197,12 +193,12 @@
                 <div class="row tight-width-whitespace photos">
                     <div class="col-sm-6 mb-5">
                         <a class="ligthbox-image" title="Refonte d'un site web pour un journal local"
-                            href="assets/img/refonte_site_web_1.jpg" data-toggle="lightbox" data-gallery="gallery-1" data-max-width="600"
-                            data-footer="Refonte d'un site web pour un journal local">
+                            href="assets/img/refonte_site_web_1.jpg" data-toggle="lightbox" data-gallery="gallery-1"
+                            data-max-width="600" data-footer="Refonte d'un site web pour un journal local">
                             <figure>
                                 <img src="assets/img/refonte_site_web_1.jpg"
                                     alt="entreprise web design logo agence web meilleure agence et refonte site web journal"
-                                    class="img-fluid lazyload" />
+                                    class="img-fluid" loading="lazy" />
                             </figure>
                         </a>
                         <h2 class="mg-md text-center">
@@ -214,11 +210,12 @@
                     </div>
                     <div class="col-sm-6 mb-5">
                         <a class="ligthbox-image" title="Création d'un site web pour photographes"
-                            href="assets/img/creation_site_web_photographes1.jpg" data-toggle="lightbox" data-gallery="gallery-1"
-                            data-footer="Création d'un site web pour photographes">
+                            href="assets/img/creation_site_web_photographes1.jpg" data-toggle="lightbox"
+                            data-gallery="gallery-1" data-footer="Création d'un site web pour photographes">
                             <figure>
-                                <img src="assets/img/creation_site_web_photographes1.jpg" class="img-fluid lazyload"
-                                    alt="Entreprise web design à lyon création site web pour photographes" />
+                                <img src="assets/img/creation_site_web_photographes1.jpg" class="img-fluid"
+                                    alt="Entreprise web design à lyon création site web pour photographes"
+                                    loading="lazy" />
                             </figure>
                         </a>
                         <h2 class="mg-md text-center">
@@ -233,8 +230,8 @@
                             title="Création d'un site internet pour un voyageur" data-toggle="lightbox"
                             data-gallery="gallery-1" data-footer="Création d'un site internet pour un voyageur">
                             <figure>
-                                <img src="assets/img/creation_site_web_voyageur.jpg" class="img-fluid lazyload"
-                                    alt="Entreprise web design à lyon création site web pour voyageur" />
+                                <img src="assets/img/creation_site_web_voyageur.jpg" class="img-fluid"
+                                    alt="Entreprise web design à lyon création site web pour voyageur" loading="lazy" />
                             </figure>
                         </a>
                         <h2 class="mg-md text-center">
@@ -250,8 +247,9 @@
                             title="Conception d'un site pour une agence de mariage" data-toggle="lightbox"
                             data-gallery="gallery-1" data-footer="Conception d'un site pour une agence de mariage">
                             <figure>
-                                <img src="assets/img/creation_site_web_mariage.jpg" class="img-fluid lazyload"
-                                    alt="Entreprise web design à lyon création site web agence de mariage" />
+                                <img src="assets/img/creation_site_web_mariage.jpg" class="img-fluid"
+                                    alt="Entreprise web design à lyon création site web agence de mariage"
+                                    loading="lazy" />
                             </figure>
                         </a>
                         <h2 class="mg-md text-center">
@@ -266,15 +264,8 @@
             </div>
         </section>
 
-        <!-- Scrolltop button -->
-        <a href="#" title="Aller au debut de la page"
-            class="scroll-top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out btn btn-d btn-danger"
-            id="toTopBtn">
-            <span class="fa fa-chevron-up"></span>
-        </a>
-
         <!-- bloc-5-cta -->
-        <section id="bloc-5-cta" class="mt-5 parallax-section texture-paper bloc-5-cta lazyload">
+        <section id="bloc-5-cta" class="mt-5 parallax-section texture-paper bloc-5-cta">
             <div class="container bloc-lg">
                 <div class="row tight-width-whitespace bgc-dark">
                     <div class="col-sm-12 wrap">
@@ -317,10 +308,17 @@
                 </div>
             </div>
         </footer>
+    <!-- Scrolltop button -->
+    <a href="#" title="Aller au debut de la page"
+        class="scroll-top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out btn btn-d btn-danger"
+        id="toTopBtn">
+        <img src="assets/img/chevron-arrow-up.svg" class="chevron-up-icon" alt="Scroll top icon"/>
+    </a>
     </main>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css" rel="stylesheet" />
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" /> -->
 
@@ -339,4 +337,5 @@
     <script src="assets/js/style.js" async></script>
 
 </body>
+
 </html>
