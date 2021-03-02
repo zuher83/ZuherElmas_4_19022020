@@ -31,12 +31,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--    External libraries-->
+    <script src="assets/js/lazysizes.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- local files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -87,7 +84,7 @@
 
     <main>
         <!-- bloc-2-services -->
-        <section id="bloc-2-services" class="bloc-2-services container mb-1 p-4">
+        <section id="bloc-2-services" class="bloc-2-services container mb-1 p-4 lazyload">
             <h2 class="text-danger pt-4 pm-1 mb-0">Nos services</h2>
             <section class="row text-center mb-5 three-col pb-5 mt-1 bloc-3-services">
                 <header class="row mb-5">
@@ -142,7 +139,7 @@
             </section>
         </section>
 
-        <article class="row mb-5">
+        <article class="row mb-5 lazyload">
             <div class="container">
                 <div class="col-xs-12 text-center">
                     <header>
@@ -161,7 +158,7 @@
 
 
         <!-- bloc-3-what-i-do -->
-        <section id="bloc-2-hero" class="parallax-section bloc-2-hero texture-paper">
+        <section id="bloc-2-hero" class="parallax-section bloc-2-hero texture-paper lazyload">
             <div class="container bloc-lg">
                 <div class="row tight-width-whitespace bgc-dark">
                     <div class="col-sm-12 wrap">
@@ -187,7 +184,7 @@
         </section>
 
         <!-- bloc-4-portfolio -->
-        <section id="bloc-4-portfolio" class="mb-5 bloc-4-portfolio">
+        <section id="bloc-4-portfolio" class="mb-5 bloc-4-portfolio lazyload">
             <div class="container">
                 <div class="row mt-5 mb-5 tight-width-whitespace">
                     <div class="col-sm-12 text-center">
@@ -200,12 +197,12 @@
                 <div class="row tight-width-whitespace photos">
                     <div class="col-sm-6 mb-5">
                         <a class="ligthbox-image" title="Refonte d'un site web pour un journal local"
-                            href="assets/img/1.jpg" data-toggle="lightbox" data-gallery="gallery-1" data-max-width="600"
+                            href="assets/img/refonte_site_web_1.jpg" data-toggle="lightbox" data-gallery="gallery-1" data-max-width="600"
                             data-footer="Refonte d'un site web pour un journal local">
                             <figure>
-                                <img src="assets/img/1.jpg"
+                                <img src="assets/img/refonte_site_web_1.jpg"
                                     alt="entreprise web design logo agence web meilleure agence et refonte site web journal"
-                                    class="img-fluid" />
+                                    class="img-fluid lazyload" />
                             </figure>
                         </a>
                         <h2 class="mg-md text-center">
@@ -217,10 +214,10 @@
                     </div>
                     <div class="col-sm-6 mb-5">
                         <a class="ligthbox-image" title="Création d'un site web pour photographes"
-                            href="assets/img/2.jpg" data-toggle="lightbox" data-gallery="gallery-1"
+                            href="assets/img/creation_site_web_photographes1.jpg" data-toggle="lightbox" data-gallery="gallery-1"
                             data-footer="Création d'un site web pour photographes">
                             <figure>
-                                <img src="assets/img/2.jpg" class="img-fluid"
+                                <img src="assets/img/creation_site_web_photographes1.jpg" class="img-fluid lazyload"
                                     alt="Entreprise web design à lyon création site web pour photographes" />
                             </figure>
                         </a>
@@ -232,11 +229,11 @@
                         </p>
                     </div>
                     <div class="col-sm-6">
-                        <a class="ligthbox-image" href="assets/img/3.jpg"
+                        <a class="ligthbox-image" href="assets/img/creation_site_web_voyageur.jpg"
                             title="Création d'un site internet pour un voyageur" data-toggle="lightbox"
                             data-gallery="gallery-1" data-footer="Création d'un site internet pour un voyageur">
                             <figure>
-                                <img src="assets/img/3.jpg" class="img-fluid"
+                                <img src="assets/img/creation_site_web_voyageur.jpg" class="img-fluid lazyload"
                                     alt="Entreprise web design à lyon création site web pour voyageur" />
                             </figure>
                         </a>
@@ -249,11 +246,11 @@
                         </p>
                     </div>
                     <div class="col-sm-6">
-                        <a class="ligthbox-image" href="assets/img/4.jpg"
+                        <a class="ligthbox-image" href="assets/img/creation_site_web_mariage.jpg"
                             title="Conception d'un site pour une agence de mariage" data-toggle="lightbox"
                             data-gallery="gallery-1" data-footer="Conception d'un site pour une agence de mariage">
                             <figure>
-                                <img src="assets/img/4.jpg" class="img-fluid"
+                                <img src="assets/img/creation_site_web_mariage.jpg" class="img-fluid lazyload"
                                     alt="Entreprise web design à lyon création site web agence de mariage" />
                             </figure>
                         </a>
@@ -277,7 +274,7 @@
         </a>
 
         <!-- bloc-5-cta -->
-        <section id="bloc-5-cta" class="mt-5 parallax-section texture-paper bloc-5-cta">
+        <section id="bloc-5-cta" class="mt-5 parallax-section texture-paper bloc-5-cta lazyload">
             <div class="container bloc-lg">
                 <div class="row tight-width-whitespace bgc-dark">
                     <div class="col-sm-12 wrap">
@@ -321,9 +318,15 @@
             </div>
         </footer>
     </main>
-    <link href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" /> -->
+
+    <!-- local files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
