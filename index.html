@@ -33,8 +33,11 @@
     <link rel="preconnect" href="https://code.jquery.com" crossorigin="anonymous">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
-    <link rel="preload" as="image" href="assets/img/la-chouette-agence-banniere.jpg">
     <link rel="preload" as="image" href="assets/img/la-chouette-agence-banniere-xl.jpg">
+
+    <!-- local files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -68,8 +71,8 @@
 
         <!-- bloc-1-presentation -->
         <section id="bloc-1-hero" class="parallax-section bloc-1-hero texture-paper">
-            <div class="container bloc-lg">
-                <div class="row tight-width-whitespace bgc-dark">
+            <div class="container">
+                <div class="row no-gutters bgc-dark">
                     <div class="col-sm-12 wrap">
                         <img src="assets/img/logo.png" width="150" height="150" class="center-block image-resize-mode"
                             alt="La chouette agence lyon, entreprise webdesign lyon" />
@@ -85,74 +88,78 @@
 
     <main>
         <!-- bloc-2-services -->
-        <section id="bloc-2-services" class="bloc-2-services container mb-1 p-4">
-            <h2 class="text-danger pt-4 pm-1 mb-0">Nos services</h2>
-            <section class="row text-center mb-5 three-col pb-5 mt-1 bloc-3-services">
-                <header class="row mb-5">
-                    <div class="col-sm-12 text-center mb-3 mt-2">
-                        <h3>La chouette agence est une entreprise de web design située à Lyon qui aide les
-                            entreprises à devenir attractives et visibles sur internet.</h3>
-                    </div>
-                </header>
+        <section id="bloc-2-services" class="bloc-2-services mb-1">
+            <div class="container">
+                <div class="row no-gutters text-center">
+                    <header class="col-sm-12 mb-5">
+                        <div class="text-center mb-3 mt-2">
+                            <h2 class="text-danger pt-4 pm-1 mb-0">Nos services</h2>
+                            <h3 class="mt-3">La chouette agence est une entreprise de web design située à Lyon qui aide
+                                les entreprises à devenir attractives et visibles sur internet.</h3>
+                        </div>
+                    </header>
 
-                <article class="col-sm-4 mb-5">
-                    <div>
-                        <span class="icon-browser shadow-sm icon-lg"></span>
-                    </div>
-                    <header>
-                        <h3 class="mb-2 mt-3">
-                            Web design
-                        </h3>
-                    </header>
-                    <p class="mt-3">
-                        Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez
-                        de zéro, laissez-nous vous réaliser un design dont vous serez fier.
-                    </p>
-                </article>
-                <article class="col-sm-4 mb-5">
-                    <div class="text-center">
-                        <span class="icon-presentation shadow-sm icon-lg"></span>
-                    </div>
-                    <header>
-                        <h3 class="mb-2 mt-3">
-                            Stratégie
-                        </h3>
-                    </header>
-                    <p class="mt-3">
-                        Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour
-                        comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
-                    </p>
-                </article>
-                <article class="col-sm-4 mb-1">
-                    <div class="text-center">
-                        <span class="icon-edit shadow-sm icon-lg"></span>
-                    </div>
-                    <header>
-                        <h3 class="mb-2 mt-3">
-                            Illustrations
-                        </h3>
-                    </header>
-                    <p class="mt-3">
-                        Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de
-                        graphistes talentueux pour donner à vos pages une touche finale d'élégance.
-                    </p>
-                </article>
-            </section>
+                    <article class="col-md-4 col-sm-12 mb-5">
+                        <div>
+                            <span class="icon-browser shadow-sm icon-lg"></span>
+                        </div>
+                        <header>
+                            <h3 class="mb-2 mt-3">
+                                Web design
+                            </h3>
+                        </header>
+                        <p class="mt-3">
+                            Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez
+                            de zéro, laissez-nous vous réaliser un design dont vous serez fier.
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-sm-12 mb-5">
+                        <div class="text-center">
+                            <span class="icon-presentation shadow-sm icon-lg"></span>
+                        </div>
+                        <header>
+                            <h3 class="mb-2 mt-3">
+                                Stratégie
+                            </h3>
+                        </header>
+                        <p class="mt-3">
+                            Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour
+                            comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-sm-12 mb-1">
+                        <div class="text-center">
+                            <span class="icon-edit shadow-sm icon-lg"></span>
+                        </div>
+                        <header>
+                            <h3 class="mb-2 mt-3">
+                                Illustrations
+                            </h3>
+                        </header>
+                        <p class="mt-3">
+                            Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de
+                            graphistes talentueux pour donner à vos pages une touche finale d'élégance.
+                        </p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <article class="row mb-5">
+        <article class="mb-5">
             <div class="container">
-                <div class="col-xs-12 text-center">
-                    <header>
-                        <h2>Pourquoi nous?</h2>
-                    </header>
-                    <blockquote class="blockquote text-center">
-                        <p>"La chouette agence est une excellente agence web ! Les web designers ont réussi à
-                            capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à
-                            doubler nos ventes en ligne à Lyon."
-                        </p>
-                        <footer class="blockquote-footer">Maxime Guibard, PDG de À vos fourchettes</footer>
-                    </blockquote>
+                <div class="row no-gutters">
+                    <div class="col-xs-12 text-center">
+                        <header>
+                            <h2>Pourquoi nous?</h2>
+                        </header>
+                        <blockquote class="blockquote text-center">
+                            <p>"La chouette agence est une excellente agence web ! Les web designers ont réussi à
+                                capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à
+                                doubler nos ventes en ligne à Lyon."
+                            </p>
+                            <footer class="blockquote-footer">Maxime Guibard, PDG de À vos fourchettes</footer>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
         </article>
@@ -160,15 +167,15 @@
 
         <!-- bloc-3-what-i-do -->
         <section id="bloc-2-hero" class="parallax-section bloc-2-hero texture-paper">
-            <div class="container bloc-lg">
-                <div class="row tight-width-whitespace bgc-dark">
+            <div class="container">
+                <div class="row no-gutters bgc-dark">
                     <div class="col-sm-12 wrap">
-                        <h2 class="text-center mt-5 mb-5 pr-5 pl-5">
+                        <h2 class="text-center mt-5 mb-5 mr-5 ml-5">
                             Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à
                             connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de
                             nouveaux clients.
                         </h2>
-                        <p class="text-center pr-5 pl-5">
+                        <p class="text-center mr-5 ml-5">
                             Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale,
                             qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site.
                             Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site,
@@ -187,7 +194,7 @@
         <!-- bloc-4-portfolio -->
         <section id="bloc-4-portfolio" class="mb-5 bloc-4-portfolio">
             <div class="container">
-                <div class="row mt-5 mb-5 tight-width-whitespace">
+                <div class="row no-gutters mt-5 mb-5">
                     <div class="col-sm-12 text-center">
                         <blockquote class="blockquote text-center">
                             <p>"Notre entreprise de webdesign est au service de nombreux clients sur Lyon, voici nos
@@ -195,7 +202,7 @@
                         </blockquote>
                     </div>
                 </div>
-                <div class="row tight-width-whitespace photos">
+                <div class="row no-gutters photos">
                     <div class="col-sm-6 mb-5">
                         <a class="ligthbox-image" title="Refonte d'un site web pour un journal local"
                             href="assets/img/refonte_site_web_1.jpg" data-toggle="lightbox" data-gallery="gallery-1"
@@ -273,13 +280,12 @@
         <!-- bloc-5-cta -->
         <section id="bloc-5-cta" class="mt-5 parallax-section texture-paper bloc-5-cta">
             <div class="container bloc-lg">
-                <div class="row tight-width-whitespace bgc-dark">
+                <div class="row no-gutters bgc-dark">
                     <div class="col-sm-12 wrap">
                         <h2 class="text-center mt-5 mb-5">
                             Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
                         </h2>
-                        <a href="page2.html" class="btn btn-lg btn-danger shadow-sm p-3"
-                            id="cta-hero3">Contact</a>
+                        <a href="page2.html" class="btn btn-lg btn-danger shadow-sm p-3" id="cta-hero3">Contact</a>
                     </div>
                 </div>
             </div>
@@ -288,7 +294,7 @@
         <!-- Footer - bloc-8 -->
         <footer class="mt-5" id="bloc-8">
             <div class="container bloc-sm">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-sm-12">
                         <blockquote class="blockquote text-center">
                             <p>"La chouette agence - Entreprise webdesign basée à Lyon."</p><br>
@@ -297,16 +303,30 @@
                             <div class="col-sm-12">
                                 <div class="text-center">
                                     <a class="social btn text-primary" href="twitter.com"
-                                        aria-label="partager sur twitter"><i class="fab fa-twitter fa-3x"></i></a>
+                                        aria-label="partager sur twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                        </svg></a>
                                     <a class="social btn text-primary" href="facebook.com"
-                                        aria-label="partager sur facebook"><span
-                                            class="fab fa-facebook fa-3x"></span></a>
+                                        aria-label="partager sur facebook"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                        </svg></a>
                                     <a class="social btn text-primary" href="dribble.com"
-                                        aria-label="partager sur dribble"><span
-                                            class="fab fa-dribbble fa-3x"></span></a>
+                                        aria-label="partager sur dribble"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z" />
+                                        </svg></a>
                                     <a class="social btn text-primary" href="instagram.com"
-                                        aria-label="partager sur instagram"><span
-                                            class="fab fa-instagram fa-3x"></span></a>
+                                        aria-label="partager sur instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                        </svg></a>
                                 </div>
                             </div>
                         </div>
@@ -327,16 +347,14 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-
-    <!-- local files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
-        ></script>
+        async>
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
         integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
