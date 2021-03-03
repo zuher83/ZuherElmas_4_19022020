@@ -75,9 +75,10 @@ fabric.properties
 
 ### Sass template
 .sass-cache/
-*.css.map
+# *.css.map
 *.sass.map
 *.scss.map
+.**/**/.sass-cache
 
 ### macOS template
 # General
