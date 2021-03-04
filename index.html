@@ -35,7 +35,9 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
     <link rel="preload" as="image" href="assets/img/la-chouette-agence-banniere-xl.jpg">
     <link rel="preload" as="image" href="assets/img/logo.png">
+    <link rel="preload" as="image" href="assets/img/logo-xs.png">
     <link rel="preload" as="image" href="assets/img/la-chouette-agence.png">
+    <link rel="preload" as="image" href="assets/img/la-chouette-agence-xs.png">
 
     <!-- local files -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -51,7 +53,8 @@
                     <figure aria-label="Logo La Chouette Agence" title="La Chouette Agence">
                         <img src="assets/img/la-chouette-agence.png"
                             alt="Entreprise web design Lyon logo la meilleure agence web design" width="240" height="45"
-                            srcset="assets/img/la-chouette-agence-xs.png 480w" class="img img-fluid" />
+                            srcset="assets/img/la-chouette-agence-xs.png 480w"
+                            sizes="(max-width: 480px) 440px" class="img img-fluid" />
                     </figure>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top_menu_collapse"
@@ -76,11 +79,12 @@
             <div class="container">
                 <div class="row no-gutters bgc-dark">
                     <div class="col-sm-12 wrap">
-                        <h1 class="mt-5 mb-5">Votre Entreprise Webdesign de Lyon vous apporte son expertise</h1>
+                        <h1 class="mt-5 mb-3">Votre Entreprise Webdesign de Lyon vous apporte son expertise</h1>
                         <img src="assets/img/logo.png" width="150" height="150" class="center-block image-resize-mode"
-                        srcset="assets/img/logo-xs.png 480w" alt="La chouette agence lyon, entreprise webdesign lyon" />
+                        srcset="assets/img/logo-xs.png 480w" sizes="(max-width: 480px) 440px"
+                        alt="La chouette agence lyon, entreprise webdesign lyon" />
                         <div>
-                            <a href="page2.html" class="btn btn-md btn-danger shadow-sm p-3" id="cta-hero"
+                            <a href="page2.html" class="btn btn-xs btn-danger shadow-sm pr-2 pl-2" id="cta-hero"
                                 title="Contactez nous">Contact</a>
                         </div>
                     </div>
@@ -105,7 +109,7 @@
                     <article class="col-md-4 col-sm-12 mb-5">
                         <div>
                             <img src="assets/icons/browser.svg" width="90" height="90" class="et-icon"
-                                title="Web design icon" />
+                                alt="Web design icon" />
                         </div>
                         <header>
                             <h3 class="mb-2 mt-3">
@@ -120,7 +124,7 @@
                     <article class="col-md-4 col-sm-12 mb-5">
                         <div class="text-center">
                             <img src="assets/icons/presentation.svg" width="90" height="90" class="et-icon"
-                                title="Web presentation icon" />
+                                alt="Web presentation icon" />
                         </div>
                         <header>
                             <h3 class="mb-2 mt-3">
@@ -135,7 +139,7 @@
                     <article class="col-md-4 col-sm-12 mb-1">
                         <div class="text-center">
                             <img src="assets/icons/edit.svg" width="90" height="90" class="et-icon"
-                                title="Web edit icon" />
+                                alt="Web edit icon" />
                         </div>
                         <header>
                             <h3 class="mb-2 mt-3">
@@ -357,7 +361,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
-        async>
+        >
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
